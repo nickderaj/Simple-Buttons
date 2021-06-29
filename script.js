@@ -20,3 +20,11 @@ document.addEventListener("keydown", function (e) {
     addClasses();
   }
 });
+
+// Show Overlay & Buttons:
+for (let i = 0; i < openButtons.length; i++) {
+  openButtons[i].addEventListener("click", function () {
+    buttons[i].classList.remove("hidden");
+    overlay.classList.remove("hidden");
+  });
+}
